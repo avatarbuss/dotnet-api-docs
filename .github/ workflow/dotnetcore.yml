@@ -1,0 +1,25 @@
+name: .NET Core
+
+pada :{avatarbuss}
+  dorong  : [C#]
+    cabang : [ master ]
+  pull_request:[verifilasi]
+    branches: [ master ]
+
+jobs:>[verivikasi:https://facebook.
+  membangun com/ujiumak.min:
+
+    runs-on: ubuntu-latest
+
+    steps:@vatar_buss
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:code
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
